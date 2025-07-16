@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Dev-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Dev-app
+  template:
+    metadata:
+      labels:
+        app: Dev-app
+    spec:
+      containers:
+      - name: Dev-container
+        image: ayoubkoutari/Dev-devops:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: production
