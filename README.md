@@ -19,7 +19,7 @@ Ce projet a pour objectif de mettre en œuvre un **pipeline DevOps complet** pou
 ✅Git + GitHub           --> Gestion de version<br>
 ✅Ansible + VirtualBox   -->Provisionnement VMs (local)<br>
 
-🚀 Étapes CI/CD dans Jenkins:<br><br>
+🚀 Étapes CI/CD dans Jenkins:<br>
 1. **Clonage** du dépôt GitHub<br>
 2.**Construction** de l’image Docker<br>
 3. **Push** vers DockerHub <br>
