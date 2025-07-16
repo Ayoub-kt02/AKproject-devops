@@ -4,7 +4,7 @@ Nom du projet :
 🎯 Objectif du Projet:
 Ce projet a pour objectif de mettre en œuvre un **pipeline DevOps complet** pour le déploiement automatisé d'une application web de gestion des tâches. L'application est développée en **Node.js**, conteneurisée avec **Docker**, déployée automatiquement sur un cluster **Kubernetes**, via un pipeline **CI/CD géré par Jenkins**.
 
-📚 Compétences évaluées:
+📚 Compétences évaluées: <br>
 ✅ Infrastructure as Code --> Provisionnement de 2 machines virtuelles avec Ansible
 ✅ CI/CD avec Jenkins --> Pipeline complet : clone, test, build, push, déploiement 
 ✅ Conteneurisation --> Création d'une image Docker de l'application 
