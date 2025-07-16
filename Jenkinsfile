@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-        IMAGE_NAME = 'ayoubkoutari/AKproject-devops'
+        IMAGE_NAME = 'ayoubkoutari/task-app'
     }
 
     stages {
@@ -30,9 +30,10 @@ pipeline {
                 }
             }
         }
-        stage('Deploy to Kubernetes') {
+        stage('Déploiement Kubernetes') {
             steps {
-                echo "Déploiement Kubernetes prévu après"
+                sh 'kubectl apply -f k8s/deployment.yaml'
+                   'kubectl apply -f k8s/service.yaml'
             }
         }
     }
