@@ -21,7 +21,7 @@ Ce projet a pour objectif de mettre en œuvre un **pipeline DevOps complet** pou
 
 🚀 Étapes CI/CD dans Jenkins:<br>
 1. **Clonage** du dépôt GitHub<br>
-2.**Construction** de l’image Docker<br>
+2.**construction**de l'image Docker<br>
 3. **Push** vers DockerHub <br>
 4. **Déploiement Kubernetes** via `kubectl apply`<br>
 
