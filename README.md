@@ -1,4 +1,4 @@
-Nom du projet :<br><br>
+Nom du projet :<br>
 "Déploiement Automatisé d'une Application Web de Gestion des Tâches"
 
 🎯 Objectif du Projet:<br><br>
@@ -25,7 +25,7 @@ Ce projet a pour objectif de mettre en œuvre un **pipeline DevOps complet** pou
 3. **Push** vers DockerHub <br>
 4. **Déploiement Kubernetes** via `kubectl apply`<br>
 
-🌐 Déploiement Kubernetes:<br><br>
+🌐 Déploiement Kubernetes:<br>
 - **Fichier `deployment.yaml`** : déploie l'application depuis DockerHub<br>
 - **Fichier `service.yaml`** : expose l’application sur le port `31000`<br>
 - **Fichier `pvc.yaml`** : volume persistant<br>
