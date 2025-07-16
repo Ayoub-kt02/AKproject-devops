@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-        IMAGE_NAME = "ayoubkoutari/AKproject-devops"
+        IMAGE_NAME = 'ayoubkoutari/AKproject-devops'
     }
 
     stages {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "Pas de tests pour le moment"
+                echo "Ici, vous pourrez lancer des tests"
             }
         }
         stage('Build Docker Image') {
@@ -25,10 +25,8 @@ pipeline {
         stage('Push to DockerHub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                    sh """
-                    echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                    docker push $IMAGE_NAME
-                    """
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                    sh 'docker push $IMAGE_NAME'
                 }
             }
         }
